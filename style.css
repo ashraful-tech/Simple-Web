@@ -1,0 +1,113 @@
+* {
+    font-family: "Noto Serif Bengali", serif;
+    margin: 0;
+    padding: 0;
+}
+
+h2,
+h3 {
+    text-align: center;
+}
+
+.main_box {
+    height: 100vh;
+    background: url(https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+}
+
+.btn_one {
+    color: black;
+    position: absolute;
+    font-size: 30px;
+    left: 20px;
+    line-height: 60px;
+}
+
+.sidebar_menu {
+
+    position: fixed;
+    left: -350px;
+    height: 100vh;
+    width: 300px;
+    background-color: rgba(244, 245, 241, 0.805);
+    transition: 1s;
+}
+
+.sidebar_menu .logo {
+    color: black;
+    text-decoration: none;
+    position: absolute;
+    width: 100%;
+    font-size: 25px;
+    height: 60px;
+    left: 70px;
+}
+
+.sidebar_menu .btn_two {
+    position: absolute;
+    font-size: 30px;
+    left: 260px;
+    line-height: 60px;
+    cursor: pointer;
+}
+
+.sidebar_menu .menu {
+
+    position: absolute;
+    width: 100%;
+    top: 80px;
+}
+
+.sidebar_menu .menu li {
+    top: 6px;
+    padding: 14px 20px 25px 15px;
+}
+
+.sidebar_menu .menu i,
+a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.sidebar_menu .menu i {
+    padding-right: 18px;
+}
+
+.sidebar_menu .social_media {
+    color: black;
+    position: absolute;
+    bottom: 160px;
+    left: 100px;
+    /* opacity: 0.7; */
+
+}
+
+.sidebar_menu .social_media i {
+    color: solid black;
+    padding: 0 8px;
+    opacity: 0.7;
+}
+
+.sidebar_menu .social_media i:hover {
+    color: black;
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.sidebar_menu .menu li:hover {
+    box-shadow: 0 0 8px seagreen;
+}
+
+#check {
+    display: none;
+}
+
+#check:checked ~ .sidebar_menu{
+    left: 0;
+}
+
+#check:checked ~ .btn_one {
+    opacity: 0;
+}
+
